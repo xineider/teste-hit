@@ -19,7 +19,7 @@ Para instalar localmente:
 Para acessar o CRM vá para http://localhost:3000/sistema
 
 Usuário:<br>
-admin
+admin <br>
 Senha:<br>
 admin
 
