@@ -10,15 +10,6 @@ var config = {
 	"database" : "hit"
 };
 
-// var config = {
-//   "host"     : "ble5mmo2o5v9oouq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-//   "user"     : "yjwx6jai0azejl66",
-//   "password" : "sho1qybc1w3h153h",
-//   "database" : "lyr8dswx64qksiob"
-// };
-
-
-
 
 // // CONEXÃO MYSQL
 var mysql      = require('mysql');
