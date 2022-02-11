@@ -1,0 +1,34 @@
+<div class="text-center container_titulo">
+	<div class="container_titulo_conteudo">
+		<div>Administração</div>
+		<div class="separator">
+			<div class="separator_marcador gradient-p"></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container_introducao">
+
+
+	<form class="contato" method="POST" action="" enctype="multipart/form-data">
+
+		<textarea id="my-expressjs-tinymce-app" name="conteudo">
+		<%- data.home[0].conteudo %>
+		</textarea>
+
+
+
+		<div class="text-center">
+			<button id="enviar_conteudo" data-href="/sistema/administracao/enviar_conteudo" data-action="/administracao/" class="btn-send ajax-submit-tiny" type="button">
+				Enviar
+			</button>
+		</div>
+
+
+	</form>
+
+
+
+
+</div>

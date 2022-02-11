@@ -1,0 +1,45 @@
+<div class="text-center container_titulo">
+	<div class="container_titulo_conteudo">
+		<div>Contato</div>
+		<div class="separator">
+			<div class="separator_marcador gradient-p"></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container_introducao">
+
+	<form class="contato" method="POST" action="" enctype="multipart/form-data">
+		<div class="form-row">
+			<div class="form-group col-sm-12 col-md-6">
+				<input autocomplete="on" required="true" id="nome" type="text" name="nome" title="Nome" placeholder="Nome*"class="w100 input-contato">
+
+			</div>
+			<div class="form-group col-sm-12 col-md-6">
+				<input autocomplete="on" required="true" id="email" type="email" name="email" title="E-mail" placeholder="Email*" class="w100 input-contato">
+
+			</div>
+
+		</div>
+
+		<div class="form-row">
+
+			<div class="input-field col">
+				<textarea id="f_mensagem" required="true"  name="mensagem" title="Mensagem" placeholder="Mensagem*" class="w100 input-contato textarea-contato"></textarea>
+			</div>
+		</div>
+		<div class="text-center">
+			<button id="btn-contato" data-href="/contato/enviarcontato" data-action="/contato/" class="btn-send ajax-submit" type="button">
+				Enviar
+			</button>
+		</div>
+	</form>
+
+
+
+
+
+
+
+</div>

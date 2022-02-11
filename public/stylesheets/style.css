@@ -1,0 +1,258 @@
+/*----------------------- HTML ---------------*/
+
+@font-face {
+	font-family: Montserrat;
+	src: url("/public/static/fonts/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url("/public/static/fonts/Montserrat-ExtraBold.ttf") format("ttf");
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url("/public/static/fonts/Montserrat-Regular-Light.ttf") format("ttf");
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url("/public/static/fonts/Italic.ttf") format("ttf");
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url("/public/static/fonts/Montserrat-ExtraBoldItalic.ttf") format("ttf");
+	font-style: italic;
+	font-weight: bolder;
+}
+
+
+
+html{
+	height: 100%;
+	min-height: 100%;
+	font-family: Montserrat;
+}
+
+body{
+	background:#2d2d2d;
+	height: 100%;
+	width: 100%;
+}
+
+strong{
+	font-family: Montserrat;
+	font-weight: 700;
+
+}
+
+
+/*----------------------- HTML ---------------*/
+
+/*----------------------- HEADER ---------------*/
+
+
+.logo{
+	height: 61.02px;
+	width: 160px;
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+
+.btn-menu{
+	height: 40px;
+	width: 200px;
+	border-radius: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 8px 4px;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 40px;
+	box-shadow: 0px 5px 10px #00000029;
+	font-family: Montserrat;
+}
+
+.btn-menu:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*----------------------- HEADER ---------------*/
+
+/*----------------------- UTILS ---------------*/
+
+.gradient-p{
+	background: #e98b68;
+	background: transparent -moz-linear-gradient(180deg, #EA916B 0%, #E05A4D 100%) 0% 0% no-repeat padding-box;
+	background: transparent -webkit-linear-gradient(180deg, #EA916B 0%, #E05A4D 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(180deg, #EA916B 0%, #E05A4D 100%) 0% 0% no-repeat padding-box;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e98b68', endColorstr='#E05A4D',GradientType=0 );
+}
+
+
+.white-text{
+	color: #ffffff;
+}
+
+.w100{
+	width: 100%;
+}
+
+.margin-t-10{
+	margin-top: 10px;
+}
+
+.error{
+	background: #ff0000;
+	text-align: center;
+}
+
+.sucesso{
+	background: #008000;
+	color: #fff;
+	text-align: center;
+}
+
+.none{
+	display: none;
+}
+
+
+/*----------------------- UTILS ---------------*/
+
+/*----------------------- LOADER ---------------*/
+
+.loader {
+	position: fixed;
+	background-color: rgba(232, 232, 232, 0.59);
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+.loader-container{
+	position: absolute;
+	top: 50%; 
+	left: 50%; 
+	text-align:center;
+}
+
+.loader-container.normal-loader{
+	margin-top: -35px; 
+	margin-left: -35px;
+}
+
+/*----------------------- LOADER ---------------*/
+
+
+
+/*----------------------- CONTAINER TITULO ---------------*/
+
+.container_titulo{
+	color: #fff;
+	margin-top: 20px;
+	font-size: 15pt;
+	font-family: Montserrat;
+}
+
+.container_titulo_conteudo{
+	display: inline-block;
+}
+
+.container_titulo .separator{
+	width: 100%;
+	height: 2px;
+	background: #6d6d6d;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+
+.container_titulo .separator .separator_marcador{
+	position: absolute;
+	width: 20px;
+	height: 6px;
+	display: block;
+	z-index: 2;
+	top: -2px;
+	z-index: 2;
+	left: 50%;
+	margin-left: -10px;
+}
+
+/*----------------------- CONTAINER TITULO ---------------*/
+
+
+/*----------------------- CONTAINER CONTEUDO ---------------*/
+
+
+.container_introducao{
+	background: #ea916b;
+	color: #f4c3ae;
+	width: 95%;
+	margin: 15px auto auto;
+	border-radius: 10px;
+	padding: 30px 30px;
+	font-size: 15px;
+	font-family: Montserrat;
+	font-weight: lighter;
+}
+
+.input-contato{
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	padding: 10px;
+	background: #fff;
+	font-size: 13px;
+}
+
+.input-contato::placeholder{
+	color: #999999;
+}
+
+
+.textarea-contato{
+	min-height: 200px;
+}
+
+.btn-send{
+	width: 160px;
+	height: 40px;
+	box-shadow: 0px 5px 10px #00000029;
+	border-radius: 10px;
+	background: #373735;
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 12px;
+	text-transform:uppercase ;
+	cursor: pointer;
+	margin: 8px 4px;
+	line-height: 40px;
+}
+
+
+
+/*----------------------- CONTAINER CONTEUDO ---------------*/
+
+
+/*----------------------- MEDIA QUERY ---------------*/
+
+
+@media only screen and (min-width: 1025px) {
+	.container_introducao{
+		width: 40.625%;
+	}
+
+}
+
+
+/*----------------------- MEDIA QUERY ---------------*/

@@ -1,0 +1,23 @@
+<div class="text-center container_titulo">
+	<div class="container_titulo_conteudo">
+		<div>Introdução</div>
+		<div class="separator">
+			<div class="separator_marcador gradient-p"></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container_introducao">
+
+	<%if (typeof data != 'undefined' && data.home.length > 0) {%>
+	<%- data.home[0].conteudo %>
+
+	<%}else{%>
+	<div class="error">Não existe nenhum conteúdo!</div>
+
+
+	<%}%>
+
+
+</div>

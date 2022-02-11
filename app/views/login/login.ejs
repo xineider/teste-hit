@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste Hit</title>
+	<link rel="shortcut icon" href="//static-public.klickpages.com.br/uploads/media/file/3270999/avatar-face.png">
+	<link rel='stylesheet' href='/public/stylesheets/bootstrap/bootstrap.css' />
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' />
+	<link rel='stylesheet' href='/public/stylesheets/style.css' />
+	<script src="/public/javascripts/jquery.min.js"></script>
+	<script src="/public/javascripts/jquery.mask.js"></script>
+	<script src="/public/javascripts/bootstrap/bootstrap.min.js"></script>
+	<script src="/public/javascripts/bootstrap/bootstrap-datepicker.min.js"></script>
+	<script src="/public/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+	<script src="/public/javascripts/main.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>	
+
+
+	<div class="loader none" id="padrao-loader">
+		<div class="loader-container normal-loader">
+			<i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+		</div>
+	</div>
+
+	<div class="text-center">
+		<img class="logo" src="/public/images/logo.png">
+	</div>
+
+	<main class="flex align-items-stretch">
+
+		<div class="text-center container_titulo">
+			<div class="container_titulo_conteudo">
+				<div>Login</div>
+				<div class="separator">
+					<div class="separator_marcador gradient-p"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container_introducao">
+
+			<div class="alert alert-warning text-center">
+				<p>Usuário:<br>admin</p>
+				<p>Senha:<br>admin</p>
+			</div>
+
+
+
+			<form method="POST" action="/sistema">
+
+				<div class="login-error-message">
+					<%
+					if (typeof erro != 'undefined' && typeof tipo_erro != 'undefined' && tipo_erro == '404' || typeof erro != 'undefined' && typeof tipo_erro != 'undefined' && tipo_erro == 'login') {
+					%>
+					<div class="error darken-1 text-center" style="margin-bottom: 25px;">
+						Usuário ou senha incorreto(s), tente novamente.
+						
+					</div>
+					<%
+				}
+			%>
+		</div>
+
+
+
+
+		<div class="row">
+			<div class="input-field col">
+				<input autocomplete="on" required="true" id="login" type="text" name="login" title="Login" placeholder="Login*" class="w100 input-contato">
+			</div>
+		</div>
+
+		<div class="row margin-t-10">
+			<div class="input-field col">
+				<input autocomplete="on" required="true" id="senha" type="password" name="senha" title="Senha" placeholder="Senha*" class="w100 input-contato">
+			</div>
+		</div>
+
+		<div class="text-center">
+
+			<button class="btn-send">
+				Acessar
+			</button>
+		</div>
+	</form>
+
+
+</div>
+
+</main>
+
+</body>
+</html>
